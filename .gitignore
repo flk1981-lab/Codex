@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Codex app and repo-local runtime state
+.codex/
+**/.codex/
+
+# Python environments and caches
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local env files
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local outputs and generated reports
+reports/**/pending/
+reports/**/*.docx
+reports/**/*.pdf
+reports/**/*.pptx
+
+# Backups and temporary files
+*.tmp
+*.bak
+
+# Nested project repositories are managed separately
+workspaces/*
+!workspaces/README.md

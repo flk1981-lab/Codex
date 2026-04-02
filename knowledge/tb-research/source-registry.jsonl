@@ -1,0 +1,1 @@
+{"type":"schema-note","description":"Append one JSON object per durable source read. Suggested keys: date, title, source_type, url, tb_domain, population, design, attachment_names, decision_relevance, note_path."}
