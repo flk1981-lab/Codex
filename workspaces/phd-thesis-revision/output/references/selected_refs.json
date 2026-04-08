@@ -1,0 +1,50 @@
+[
+  {
+    "citation_key": "NdongSima2023Theimmunogeneticsoftubercul",
+    "item_type": "article",
+    "title": "The immunogenetics of tuberculosis (TB) susceptibility.",
+    "year": "2023",
+    "journal": "Immunogenetics",
+    "volume": "75",
+    "issue": "3",
+    "pages": "215-230",
+    "doi": "10.1007/s00251-022-01290-5",
+    "pmid": "36512056",
+    "abstract": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), remains the leading cause of death due to a single bacterial agent, with approximately 10.6 million people developing active disease and 1.6 million deaths reported globally in 2021. After exposure, some, but not all individuals, will become infected with the bacillus. However, only a small fraction (approximately 5 to 15%) of these individuals will progress to clinical disease, while in the remainder, infection is seemingly contained, and no signs of clinical disease are shown. Numerous observations have advocated for the role of host genetics in the display of these inter-individual variabilities in infection and disease phenotypes. In this review, we will provide an overview of the approaches, findings and limitations of the very first studies investigating TB genetic susceptibility to more recent studies. Lastly, we highlight several approaches, namely, linkage analyses and association studies, proposed to discover genetic markers associated with TB susceptibility. This review also explored the concept of polygenic risk scores (PRS) for prediction of tuberculosis susceptibility. The identification of host genetic factors influencing TB susceptibility/resistance is paramount to not only better understand the physiopathology of the disease but also explore more effective approaches for the development of both optimal preventive measures (i.e. better vaccines) and treatments of TB disease.",
+    "publisher": "",
+    "place": "",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36512056/",
+    "authors": [
+      {
+        "family": "Ndong Sima",
+        "given": "Carene Anne Alene"
+      },
+      {
+        "family": "Smith",
+        "given": "Dayna"
+      },
+      {
+        "family": "Petersen",
+        "given": "Desiree C"
+      },
+      {
+        "family": "Schurz",
+        "given": "Haiko"
+      },
+      {
+        "family": "Uren",
+        "given": "Caitlin"
+      },
+      {
+        "family": "Möller",
+        "given": "Marlo"
+      }
+    ],
+    "keywords": [
+      "thesis-review",
+      "host-genetics-precision"
+    ],
+    "source_query": "host-genetics-precision",
+    "source_collection": "thesis-review"
+  }
+]

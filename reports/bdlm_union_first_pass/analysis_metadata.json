@@ -1,0 +1,9 @@
+{
+  "source_workbook": "D:\\Codex\\BDLM临床研究\\结核病临床试验《BDLM》_Union摘要 2026-03-16.xlsx",
+  "copied_workbook": "reports\\bdlm_union_first_pass\\source_workbook_copy.xlsx",
+  "analysis_cutoff_date": "2026-03-31",
+  "raw_rows": 122,
+  "deduplicated_rows": 121,
+  "protocol_rows": 108,
+  "strict_case_review_rows": 75
+}

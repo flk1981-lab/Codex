@@ -1,0 +1,16 @@
+﻿arm,metric,numerator,denominator,percent,label
+Overall,month2_culture_std,90,101,89.10891089108911,2个月培养阴转率
+Overall,eot_culture_std,78,78,100.0,停药时培养阴性率
+Overall,unfavorable_eot_std,11,102,10.784313725490197,停药时不良结局率
+Overall,unfavorable_6m_std,27,84,32.142857142857146,停药后6月不良结局率
+Overall,unfavorable_12m_std,45,84,53.57142857142857,停药后1年不良结局率
+BDL,month2_culture_std,38,45,84.44444444444444,2个月培养阴转率
+BDL,eot_culture_std,34,34,100.0,停药时培养阴性率
+BDL,unfavorable_eot_std,6,44,13.636363636363635,停药时不良结局率
+BDL,unfavorable_6m_std,13,35,37.142857142857146,停药后6月不良结局率
+BDL,unfavorable_12m_std,17,35,48.57142857142857,停药后1年不良结局率
+BDLM,month2_culture_std,52,56,92.85714285714286,2个月培养阴转率
+BDLM,eot_culture_std,44,44,100.0,停药时培养阴性率
+BDLM,unfavorable_eot_std,5,58,8.620689655172415,停药时不良结局率
+BDLM,unfavorable_6m_std,14,49,28.57142857142857,停药后6月不良结局率
+BDLM,unfavorable_12m_std,28,49,57.14285714285714,停药后1年不良结局率

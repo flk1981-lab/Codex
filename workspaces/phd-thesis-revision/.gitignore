@@ -1,0 +1,12 @@
+input/original/*
+input/working/*
+output/backups/*
+output/chapters/*
+output/outline/*
+output/reports/*
+!input/original/.gitkeep
+!input/working/.gitkeep
+!output/backups/.gitkeep
+!output/chapters/.gitkeep
+!output/outline/.gitkeep
+!output/reports/.gitkeep

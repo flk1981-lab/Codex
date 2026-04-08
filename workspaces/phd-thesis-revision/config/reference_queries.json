@@ -1,0 +1,240 @@
+{
+  "collections": [
+    {
+      "name": "review",
+      "tag": "thesis-review",
+      "queries": [
+        {
+          "label": "global-burden-guidelines",
+          "source": "pubmed",
+          "term": "(tuberculosis[Title/Abstract]) AND ((multidrug-resistant[Title/Abstract]) OR MDR-TB[Title/Abstract] OR RR-TB[Title/Abstract] OR pre-XDR[Title/Abstract]) AND (review[Publication Type] OR review[Title])",
+          "retmax": 18
+        },
+        {
+          "label": "hdt-review",
+          "source": "pubmed",
+          "term": "(tuberculosis[Title/Abstract]) AND (\"host-directed therapy\"[Title/Abstract] OR host-directed[Title/Abstract])",
+          "retmax": 18
+        },
+        {
+          "label": "sasp-xct-mechanism",
+          "source": "pubmed",
+          "term": "((sulfasalazine[Title/Abstract]) OR (SLC7A11[Title/Abstract]) OR (xCT[Title/Abstract])) AND (macrophage[Title/Abstract] OR oxidative[Title/Abstract] OR inflammation[Title/Abstract] OR tuberculosis[Title/Abstract])",
+          "retmax": 24
+        },
+        {
+          "label": "tb-macrophage-immunity",
+          "source": "pubmed",
+          "term": "(tuberculosis[Title/Abstract]) AND (macrophage[Title/Abstract]) AND (oxidative stress[Title/Abstract] OR glutathione[Title/Abstract] OR reactive oxygen species[Title/Abstract] OR inflammation[Title/Abstract])",
+          "retmax": 20
+        },
+        {
+          "label": "host-genetics-precision",
+          "source": "pubmed",
+          "term": "(tuberculosis[Title/Abstract]) AND ((host genetics[Title/Abstract]) OR polymorphism[Title/Abstract] OR SNP[Title/Abstract] OR pharmacogenetic*[Title/Abstract])",
+          "retmax": 18
+        }
+      ],
+      "manual_items": [
+        {
+          "citation_key": "WHO2025GlobalTB",
+          "item_type": "report",
+          "title": "Global tuberculosis report 2025",
+          "authors": [
+            {
+              "literal": "World Health Organization"
+            }
+          ],
+          "year": "2025",
+          "publisher": "World Health Organization",
+          "place": "Geneva",
+          "url": "https://www.who.int/publications/i/item/9789240116924",
+          "keywords": [
+            "thesis-review",
+            "guideline",
+            "global-burden"
+          ]
+        },
+        {
+          "citation_key": "WHO2025Module4Guideline",
+          "item_type": "report",
+          "title": "WHO consolidated guidelines on tuberculosis: module 4: treatment and care",
+          "authors": [
+            {
+              "literal": "World Health Organization"
+            }
+          ],
+          "year": "2025",
+          "publisher": "World Health Organization",
+          "place": "Geneva",
+          "url": "https://www.who.int/publications/i/item/9789240107243",
+          "keywords": [
+            "thesis-review",
+            "guideline",
+            "drug-resistant-tb"
+          ]
+        },
+        {
+          "citation_key": "WHO2025Module4Handbook",
+          "item_type": "report",
+          "title": "WHO operational handbook on tuberculosis: module 4: treatment and care",
+          "authors": [
+            {
+              "literal": "World Health Organization"
+            }
+          ],
+          "year": "2025",
+          "publisher": "World Health Organization",
+          "place": "Geneva",
+          "url": "https://iris.who.int/bitstream/handle/10665/381095/9789240108141-eng.pdf",
+          "keywords": [
+            "thesis-review",
+            "guideline",
+            "operational-handbook"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "body",
+      "tag": "thesis-body",
+      "queries": [
+        {
+          "label": "drtb-short-regimen-outcomes",
+          "source": "pubmed",
+          "term": "((multidrug-resistant tuberculosis[Title/Abstract]) OR (pre-XDR[Title/Abstract]) OR (drug-resistant tuberculosis[Title/Abstract])) AND (short regimen[Title/Abstract] OR all-oral[Title/Abstract] OR bedaquiline[Title/Abstract] OR linezolid[Title/Abstract]) AND (trial[Title/Abstract] OR cohort[Title/Abstract] OR outcome*[Title/Abstract])",
+          "retmax": 26
+        },
+        {
+          "label": "linezolid-toxicity",
+          "source": "pubmed",
+          "term": "(tuberculosis[Title/Abstract]) AND (linezolid[Title/Abstract]) AND (neuropathy[Title/Abstract] OR optic neuropathy[Title/Abstract] OR toxicity[Title/Abstract] OR adverse event*[Title/Abstract])",
+          "retmax": 22
+        },
+        {
+          "label": "bedaquiline-safety-qtc",
+          "source": "pubmed",
+          "term": "(tuberculosis[Title/Abstract]) AND (bedaquiline[Title/Abstract]) AND (QT[Title/Abstract] OR safety[Title/Abstract] OR electrocardiogram[Title/Abstract])",
+          "retmax": 16
+        },
+        {
+          "label": "sasp-tb-clinical-translational",
+          "source": "pubmed",
+          "term": "((sulfasalazine[Title/Abstract]) OR SASP[Title/Abstract]) AND (tuberculosis[Title/Abstract] OR macrophage[Title/Abstract] OR host-directed[Title/Abstract])",
+          "retmax": 16
+        },
+        {
+          "label": "xct-slc7a11-genetics",
+          "source": "pubmed",
+          "term": "((SLC7A11[Title/Abstract]) OR xCT[Title/Abstract]) AND (polymorphism[Title/Abstract] OR SNP[Title/Abstract] OR genotype[Title/Abstract] OR genetics[Title/Abstract])",
+          "retmax": 16
+        }
+      ],
+      "manual_items": [
+        {
+          "citation_key": "Fu2023SEALMDRProtocol",
+          "item_type": "article",
+          "title": "Study protocol for safety and efficacy of all-oral shortened regimens for multidrug-resistant tuberculosis: a multicenter randomized withdrawal trial and a single-arm trial [SEAL-MDR]",
+          "authors": [
+            {
+              "family": "Fu",
+              "given": "Liang"
+            },
+            {
+              "family": "Xiong",
+              "given": "Jun"
+            },
+            {
+              "family": "Wang",
+              "given": "Hui"
+            },
+            {
+              "literal": "et al."
+            }
+          ],
+          "year": "2023",
+          "journal": "BMC Infectious Diseases",
+          "volume": "23",
+          "issue": "1",
+          "pages": "834",
+          "doi": "10.1186/s12879-023-08828-w",
+          "keywords": [
+            "thesis-body",
+            "protocol",
+            "mdr-chin"
+          ]
+        },
+        {
+          "citation_key": "WHO2025Module4Guideline",
+          "item_type": "report",
+          "title": "WHO consolidated guidelines on tuberculosis: module 4: treatment and care",
+          "authors": [
+            {
+              "literal": "World Health Organization"
+            }
+          ],
+          "year": "2025",
+          "publisher": "World Health Organization",
+          "place": "Geneva",
+          "url": "https://www.who.int/publications/i/item/9789240107243",
+          "keywords": [
+            "thesis-body",
+            "guideline",
+            "drug-resistant-tb"
+          ]
+        },
+        {
+          "citation_key": "WHO2025Module4Handbook",
+          "item_type": "report",
+          "title": "WHO operational handbook on tuberculosis: module 4: treatment and care",
+          "authors": [
+            {
+              "literal": "World Health Organization"
+            }
+          ],
+          "year": "2025",
+          "publisher": "World Health Organization",
+          "place": "Geneva",
+          "url": "https://iris.who.int/bitstream/handle/10665/381095/9789240108141-eng.pdf",
+          "keywords": [
+            "thesis-body",
+            "guideline",
+            "operational-handbook"
+          ]
+        },
+        {
+          "citation_key": "Fu2024SASPpreXDR",
+          "item_type": "article",
+          "title": "Evaluation of Sulfasalazine as an Adjunctive Therapy in Treating Pulmonary Pre-XDR-TB: Efficacy, Safety, and Treatment Implication",
+          "authors": [
+            {
+              "family": "Fu",
+              "given": "Liang"
+            },
+            {
+              "family": "Wang",
+              "given": "Wei"
+            },
+            {
+              "family": "Xiong",
+              "given": "Jun"
+            },
+            {
+              "literal": "et al."
+            }
+          ],
+          "year": "2024",
+          "journal": "Infection and Drug Resistance",
+          "volume": "17",
+          "pages": "595-604",
+          "doi": "10.2147/IDR.S449889",
+          "keywords": [
+            "thesis-body",
+            "sasp",
+            "clinical"
+          ]
+        }
+      ]
+    }
+  ]
+}

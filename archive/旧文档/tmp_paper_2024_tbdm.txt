@@ -1,0 +1,532 @@
+===== PAGE 1 =====
+TYPE Original Research
+PUBLISHED 13 August 2024
+DOI 10.3389/fmolb.2024.1436135
+OPEN ACCESS
+EDITED BY
+Meixiu Sun,
+Chinese Academy of Medical Science, China
+REVIEWED BY
+Xiaonan Cui,
+Tianjin Medical University Cancer Institute and
+Hospital, China
+Xue Zou,
+Chinese Academy of Sciences (CAS), China
+*CORRESPONDENCE
+Guofang Deng,
+jxxk1035@yeah.net
+Wenfei Wang,
+shy_wenfei@hotmail.com
+†These authors have contributed equally
+to this work
+RECEIVED 21 May 2024
+ACCEPTED 29 July 2024
+PUBLISHED 13 August 2024
+CITATION
+Xu R, Zhang Y, Li Z, He M, Lu H, Liu G, Yang M,
+Fu L, Chen X, Deng G and Wang W (2024)
+Breathomics for diagnosing tuberculosis in
+diabetes mellitus patients.
+Front. Mol. Biosci. 11:1436135.
+doi: 10.3389/fmolb.2024.1436135
+COPYRIGHT
+© 2024 Xu, Zhang, Li, He, Lu, Liu, Yang, Fu,
+Chen, Deng and Wang. This is an open-access
+article distributed under the terms of the
+Creative Commons Attribution License (CC
+BY). The use, distribution or reproduction in
+other forums is permitted, provided the
+original author(s) and the copyright owner(s)
+are credited and that the original publication
+in this journal is cited, in accordance with
+accepted academic practice. No use,
+distribution or reproduction is permitted
+which does not comply with these terms.
+Breathomics for diagnosing
+tuberculosis in diabetes mellitus
+patients
+Rong Xu 1†, Ying Zhang 2†, Zhaodong Li 3, Mingjie He 1, Hailin Lu 4,
+Guizhen Liu 1,5, Min Yang 5, Liang Fu 5, Xinchun Chen 3,
+Guofang Deng 5* and Wenfei Wang 6*
+1Endocrinology Department, The First Affiliated Hospital of Gannan Medical University, Ganzhou,
+China, 2Department of Endocrinology, The Third People’s Hospital of Shenzhen, National Clinical
+Research Center for Infectious Disease, Southern University of Science and Technology, Shenzhen,
+China, 3Guangdong Provincial Key Laboratory of Regional Immunity and Diseases, Department of
+Pathogen Biology, Shenzhen University Medical School, Shenzhen, China, 4Key Laboratory of
+Prevention and T reatment of Cardiovascular and Cerebrovascular Diseases, Ministry of Education,
+Gannan Medical University, Ganzhou, China, 5Division Two of Pulmonary Diseases Department, The
+Third People’s Hospital of Shenzhen, National Clinical Research Center for Infectious Disease,
+Southern University of Science and T echnology, Shenzhen, China, 6National Clinical Research Center
+for Infectious Disease, The Third People’s Hospital of Shenzhen, Southern University of Science and
+T echnology, Shenzhen, China
+Introduction: Individuals with diabetes mellitus (DM) are at an increased risk
+of Mycobacterium tuberculosis (Mtb) infection and progressing from latent
+tuberculosis (TB) infection to active tuberculosis disease. TB in the DM
+population is more likely to go undiagnosed due to smear-negative results.
+Methods: Exhaled breath samples were collected and analyzed using high-
+pressure photon ionization time-of-flight mass spectrometry. An eXtreme
+Gradient Boosting (XGBoost) model was utilized for breathomics analysis and
+TB detection.
+Results: XGBoost model achieved a sensitivity of 88.5%, specificity of 100%,
+accuracy of 90.2%, and an area under the curve (AUC) of 98.8%. The most
+significant feature across the entire set was m106, which demonstrated a
+sensitivity of 93%, specificity of 100%, and an AUC of 99.7%.
+Discussion: The breathomics-based TB detection method utilizing m106
+exhibited high sensitivity and specificity potentially beneficial for clinical TB
+screening and diagnosis in individuals with diabetes.
+KEYWORDS
+breathomics, tuberculosis, diabetes mellitus, volatile organic compounds, XGBoost
+model
+Introduction
+Diabetes mellitus (DM), a rapidly increasing chronic illness on a global scale, comes
+with a multitude of complications and high mortality rates ( Cole and Florez, 2020 ).
+T uberculosis (TB) is the world’ s second leading cause of death from a single infectious
+agent, after coronavirus disease (COVID-19) ( WHO, 2022 ). Notably, 8 out of the top
+10 countries burdened with high diabetes prevalence are also high-burden countries for
+tuberculosis. The prevalence of tuberculosis among diabetes patients can range from
+Frontiers in Molecular Biosciences 01 frontiersin.org
+
+===== PAGE 2 =====
+Xu et al. 10.3389/fmolb.2024.1436135
+0.38% to 14% ( Al-Rifai et al., 2017 ). Poor control of blood
+sugar and diabetes significantly heightens the risk of contracting
+tuberculosis, with individuals having diabetes being up to four
+times more likely to develop active tuberculosis, negatively
+impacting tuberculosis treatment outcomes ( Cáceres et al., 2022 ;
+V aishya et al., 2024). The increasing prevalence of diabetes is
+anticipated to escalate the incidence of tuberculosis, posing a
+substantial threat to global public health when the two conditions
+coexist (Rehman et al., 2023; Zhao et al., 2023).
+Presently, clinical diagnosis methods for TB revolve around
+sputum samples, including sputum smear microscopy, sputum
+culture, and GeneXpert testing, alongside non-sputum samples
+like bronchoalveolar lavage fluid examination and percutaneous
+tissue biopsy ( Kontsevaya et al., 2023; Sodsri et al., 2023 ). Sputum
+smear microscopy testing often encounters a high rate of false
+negatives, while sputum culture, the primary method for diagnosing
+pulmonary tuberculosis, is hindered by low sensitivity and lengthy
+incubation periods ( Broger et al., 2023 ). GeneXpert MTB/RIF
+(Xpert) achieved good performances in TB detection and drug
+resistance testing in the clinic and has been recommended by the
+WHO. However, it still requires good infrastructure and sputum
+samples (Chen et al., 2023). Moreover, bronchoalveolar lavage fluid
+examination and percutaneous tissue biopsy, as non-sputum sample
+detection methods, enhance the diagnostic accuracy but are intricate
+and invasive (Luo et al., 2023). Diabetes combined with tuberculosis
+(DM-TB) patients are more likely to experience delayed sputum
+culture conversion, treatment failure, and higher rates of relapse,
+which present a greater challenge to accurate diagnosis. TB diagnosis
+in individuals with diabetes is more prone to failure due to
+smear-negative results. Given the existing constraints in diagnosing
+tuberculosis among diabetes patients, there is a pressing need
+for innovative diagnostic technology to bolster current diagnostic
+capacities (Xiao et al., 2021).
+Breath analysis, reflecting the body metabolism through
+volatile organic compounds (VOCs), presents over 3,500 known
+compounds, including acetone, isoprene, ethanol, ethane, and
+formaldehyde, closely tied to various diseases ( Badola et al., 2023 ;
+Moura et al., 2023 ; Sun et al., 2023 ). VOCs in exhaled breath
+serve as disease biomarkers, and the detection process of VOCs
+is non-invasive and rapid, among other features. This method
+holds promise for early disease detection, treatment monitoring,
+and metabolic status evaluation, supported by numerous studies
+showcasing its potential. For example, the concentration of acetone
+in the breath of diabetes patients escalates with disease severity,
+while isoprene levels exhibit variations in diabetes, end-stage
+renal disease, lung cancer, and advanced liver fibrosis patients.
+Researchers have successfully identified VOC characteristics of
+lung cancer, colorectal cancer, breast cancer, and other diseases
+via exhaled breath analysis. Exhaled breath analysis has shown
+encouraging outcomes in diagnosing tuberculosis, respiratory
+inflammation, and COVID-19 ( Fu et al., 2023 ; Paez et al., 2023 ;
+Savito et al., 2023; Hussain et al., 2024).
+In this research, we utilized high-pressure photon ionization
+time-of-flight mass spectrometry (HPPI-TOFMS) to analyze
+the breath VOCs of diabetes and diabetes with tuberculosis
+patients to establish a diagnostic model based on breathomics for
+diabetes combined with tuberculosis, subsequently validating it on
+clinical datasets.
+Materials and methods
+Study design and participants
+This cross-sectional study was conducted at the Third People’ s
+Hospital of Shenzhen from August 2022 to September 2023. The
+study was approved by the Ethics Committee of the Third People’ s
+Hospital of Shenzhen (number: 2022-012). By the end of the study
+period, we recruited a total of 190 participants, i.e., 93 diabetes
+patients and 97 diabetes combined with tuberculosis patients. The
+participant enrollment flow is illustrated inFigure 1. All participants
+provided informed consent.
+Inclusion criteria for DM were as follows: participants aged
+18–70 years; following the WHO 1999 diagnostic criteria for
+diabetes and the 2011 WHO recommendation to use HbA1c for
+diabetes diagnosis in countries and regions with the necessary
+conditions, with a diagnostic threshold of HbA1c ≥ 6.5%.
+Inclusion criteria for patients with DM-TB: patients with diabetes
+aged 18–70 years; clinical and radiological evidence of pulmonary
+tuberculosis, with positive microbiological evidence (positive sputum
+culture for Mycobacterium tuberculosisor positive GeneXpert result);
+and anti-TB treatment not initiated or started less than 2 weeks.
+The clinical diagnosis and collection of breath samples were
+overseen by physicians, ensuring expertise in both areas. Separate
+researchers, who were blinded to clinical data and other test outcomes,
+handled the detection of VOCs and machine learning modeling.
+Furthermore, the physicians were intentionally kept unaware of
+the breath test results to maintain objectivity. Demographic and
+clinical information for all participants was meticulously collected
+and organized, with a comprehensive summary provided inT able 1.
+Exhaled breath collection
+All breath samples were collected following a predefined protocol
+and analyzed within a 24-h timeframe. The sampling setup consisted
+of a single-use gas nozzle and a sampling bag crafted from
+polyether–ether–ketone (PEEK) material. T o ensure standardized
+procedures and reduce the impact of daily dietary variations, strict
+sampling requirements and protocols were implemented in this study.
+Initially, for inpatient participants, sampling was conducted during a
+subsequent visit, with individuals advised to prepare beforehand by
+refraining from smoking, alcohol consumption, or eating within an
+hour leading up to the sampling session. Subsequently, the participants
+were instructed to rinse their mouths with purified water immediately
+before sampling to mitigate the influence of dietary factors and
+smoking. Lastly, all samples were collected in a consistent environment
+to minimize the impact of external variables. The participants were
+instructed to take a deep nasal breath and fully exhale into the sampling
+bag, which had a volume exceeding 1.2 L.
+Breath sample detection
+The HPPI-TOFMS system utilized in this study comprises a
+vacuum ultraviolet (VUV) lamp-based HPPI ion source and an
+orthogonal acceleration time-of-flight (TOF) mass analyzer for the
+detection and analysis of breath samples. VOCs with an ionization
+Frontiers in Molecular Biosciences 02 frontiersin.org
+
+===== PAGE 3 =====
+Xu et al. 10.3389/fmolb.2024.1436135
+FIGURE 1
+Flowchart of participant recruitment.
+TABLE 1 Demographic characteristics of participants.
+Training set Test set
+DM + TB (N = 65) DM (N = 68) p-value DM + TB (N = 28) DM (N = 29) p-value
+Age
+ Median 54 (27–70) 48 (23–70) < 0.001 51 (25–70) 46 (21–70) < 0.001
+ <35 (%) 2 (3.1) 13 (19.1) 0.68 1 (3.6) 6 (20.7) 0.47
+ ≥35 (%) 63 (96.9) 58 (80.9) 0.019 27 (96.4) 23 (79.3) 0.023
+Sex
+ Male (%) 54 (83.1) 43 (63.2) 0.012 23 (82.2) 18 (62.0) 0.141
+ Female (%) 11 (16.9) 25 (36.8) - 5 (17.8) 11 (38.0) -
+potential lower than 10.6 eV were directly ionized in the ionization
+region. The gas-phase breath samples were directly introduced into
+the ionization region through a 250-μm inner diameter, 0.60-m-long
+capillary from the sampling bag. The TOF ion spectra were recorded
+using a time-to-digital converter, with mass spectra accumulated
+over 60 s. Mass spectrum peaks with m/z < 350 were detected using
+the HPPI-TOFMS system for each exhaled breath sample.
+XGBoost model construction
+W e selected the eXtreme Gradient Boosting (XGBoost)
+classification model with a gbtree kernel to distinguish DM
+and DM-TB. XGBoost is a machine learning algorithm that
+uses decision tree ensembles to build predictive models. It
+calculates the importance of features to eliminate unnecessary
+features and improve model performance and interpretability.
+All participants were randomly divided into two groups:
+70% for constructing the model and the remaining 30% for
+blinded model testing. Hence, 93 DM patients and 97 DM-
+TB patients were randomly chosen as the discovery dataset.
+Through 100 iterations of 7:3 randomization, the discovery
+dataset was split into a training subset and an internal
+validation subset. Sensitivity, specificity, accuracy, positive
+predictive value, and negative predictive value were calculated.
+Receiver operating characteristic curves were generated, and
+the area under the curve (AUC) was calculated to evaluate the
+diagnostic model.
+Frontiers in Molecular Biosciences 03 frontiersin.org
+
+===== PAGE 4 =====
+Xu et al. 10.3389/fmolb.2024.1436135
+FIGURE 2
+VOC detection spectrum of the participants.
+Performance evaluation and statistical
+analysis
+Orthogonal partial least-squares (OPLS)-DA analysis was
+conducted to assess the overall differences between the two groups.
+Then, differential VOCs were selected based on the variable
+importance in projection (VIP) values in OPLS-DA analysis, fold
+change, and p-value in univariate analysis. A volcano plot was
+generated to visualize the differential VOCs. For parametric data,
+Student’ st-test was used for pairwise comparisons between the two
+groups. Analyses of data were conducted using GraphPad Prism
+9 software (San Diego, CA). A p-value ≤ 0.05 was considered
+statistically significant.
+Result
+HPPI-TOF-MS detection
+For each participant, the detection range is from a molecular
+weight of 0–345, avoiding the molecular weight of the ion source,
+including the molecular weights where 95% of the concentration
+values can be detected. Eventually, the molecular weight range
+included is from 39 to 150, with a molecular weight interval
+of 1. T o reduce model complexity, the number of input features
+was decreased while retaining more feature information; all
+concentration values detected within the molecular weight interval
+of 1 were stacked to maximize the preservation of the original
+data features and the number of features. A total of 111 features
+were obtained, and the calculated stable wave form average value
+was calculated and considered the concentration of the VOCs. The
+spectrum of detection is shown in Figure 2. Endogenous VOCs
+that had stable and low-noise waveforms were used for the model
+construction.
+Evaluation of the XGBoost model and
+feature importance
+The XGBoost model attained a sensitivity of 100%, a specificity
+of 100%, an accuracy of 1, and an AUC of 1.0 (95% confidence
+interval [CI]: 1.0 to 1.0) in the training dataset. The test dataset
+achieved a sensitivity of 88.5%, a specificity of 100%, an accuracy
+of 0.902, and an AUC of 98.8% (95% CI: 0.960 to 1.0). These
+indicators demonstrated the performance of the model. The
+AUC reflected the robustness of the models. The evaluation of
+the models is shown in Figures 3A, B. V arious popular machine
+learning (ML) models such as random forest (RF), support vector
+machine (SVM), logistic regression (LR), XGB, and decision tree
+(DT) were utilized as classifiers to differentiate between DM-TB
+and DM (Table 2).
+Feature importance refers to the contribution of each VOC
+and radiology report to the prediction score. The SHapley
+Additive exPlanations (SHAP) method was used to evaluate
+the XGBoost model. It indicates the classification capability of
+each feature. The most important features for the whole set
+were m106 (represents m/z = 106.0), as shown in Figure 3C.
+The data achieved a sensitivity of 93%, a specificity of 100%,
+and an AUC of 99.7% (95% CI: 0.993 to 1.0) based on m106
+only (Figure 3D).
+VOC m106 was a potential biomarker for
+detecting DM-TB
+T o further validate the significant feature of VOC m106
+to differentiate DM-TB patients from DM patients, an OPLS-
+DA model was used to avoid overfitting and evaluate the
+statistical significance of the model. The OPLS-DA score
+plot showed clear separation between the DM group and
+the DM-TB group based on the concentration of all VOCs
+Frontiers in Molecular Biosciences 04 frontiersin.org
+
+===== PAGE 5 =====
+Xu et al. 10.3389/fmolb.2024.1436135
+FIGURE 3
+Evaluation of the XGBoost models and feature importance. (A,B) Sensitivity, specificity, and accuracy of the model in the training and test datasets. (C)
+Feature importance of the model in the dataset by SHAP . (D) Receiver operating characteristic curve analysis based on VOC m106; m106 represents
+m/z = 106.0.
+TABLE 2 Performance of different ML models for TB detection in the test dataset.
+Dataset Model Sensitivity Specificity PPV NPV Accuracy AUC
+T est (n = 57)
+MARS 0.885 0.967 0.958 0.906 0.929 0.981
+RF 1.000 1.000 0.966 0.970 0.968 1.000
+SVM 0.717 0.783 0.800 0.793 0.796 0.795
+KNN 0.962 0.964 0.962 0.964 0.963 0.963
+(Figure 4A). According to the heatmap and the volcano plot,
+the content of m106 significantly decreases in the DM-TB
+group ( Figures 4B, C). A blinded test set including DM (n =
+20) and DM-TB patients (n = 20) was established to validate
+m106 concentration using HPPI-TOF-MS in these two groups.
+The data show that the content of m106 indeed significantly
+decreases in the DM-TB group and achieved distinguished
+efficacy (Figures 4D, E).
+Discussion
+Screening for tuberculosis in diabetes patients can help
+identify tuberculosis symptoms early, leading to prompt diagnosis
+and treatment and reducing the transmission of tuberculosis in
+healthcare facilities and communities ( Zhou et al., 2023). However,
+compared to isolated pulmonary TB, clinical symptoms of DM-TB
+are typically atypical. Patients may present with milder symptoms
+Frontiers in Molecular Biosciences 05 frontiersin.org
+
+===== PAGE 6 =====
+Xu et al. 10.3389/fmolb.2024.1436135
+FIGURE 4
+VOC m106 was a potential biomarker for detecting DM-TB. (A) OPLS-DA model for the DM and DM-TB groups. (B) Volcanic map of differential VOCs
+for the DM and DM-TB groups. (C) Clustering on differential VOCs for the DM and DM-TB groups. (D) VOC m106 concentration between the DM and
+DM-TB groups in the blinded test set. (E) Receiver operating characteristic curve analysis based on VOC m106 in the blinded test set. The differences
+among groups were compared using an unpaired t-test. ∗ ∗ ∗ ∗ p ≤ 0.001.
+but more pronounced radiological findings. Currently, there
+are several limitations in sputum-based tuberculosis diagnostic
+technologies such as inaccuracy, high costs, and complexity of
+operation (Xu et al., 2023).
+Research on breathomics mainly focused on respiratory system
+diseases. With the emergence of various detection technologies,
+the application scope has gradually expanded to include diabetes,
+cancer, kidney disease, liver disease, cognitive impairments, and
+other conditions ( Ibrahim et al., 2021 ; Freddi and Sangaletti,
+2022; Khoubnasabjafari et al., 2022). In our previous research, we
+explored the diagnostic significance of utilizing HPPI-TOF-MS
+for breathomics data analysis in the context of PTB within a
+sizable study group; exhaled breath samples were collected from
+518 PTB patients and 887 controls and tested. Machine learning
+algorithms based on different VOCs were used for breathomics
+analysis and PTB detection. The differences between the two
+groups did not include the substance with m/z = 106. This
+may indicate its specificity in detecting TB-DM from another
+perspective (Fu et al., 2023). This method is non-invasive and does
+not require sputum samples. From breath sampling to obtaining
+test results, it takes only approximately 5 min, greatly improving
+the diagnostic efficiency ( Meng et al., 2021). Our findings indicate
+that the breathomics approach we proposed shows promise as an
+effective diagnostic tool for screening TB for clinical applications.
+Diabetes and tuberculosis are both common clinical diseases
+that can coexist; yet, there is currently no research on exhaled VOCs
+related to diabetes combined with tuberculosis. In this study, we
+explore the diagnostic value of breathomics data detection for DM-
+TB. The results demonstrated that the XGBoost model performs
+well in distinguishing DM-TB individuals and DM patients with
+high sensitivity and specificity of 88.5% and 100%. During the
+feature importance analysis, VOC m106 displayed the highest
+feature value with a score of 3.018. However, the complexity of
+breath gas composition and limitations to HPPI-TOFMS technology
+make it difficult to confirm the specific substance for m/z = 106.
+Furthermore, the substance with m/z = 106 may also have multiple
+forms, which makes it difficult to identify using standard reference
+materials. W e can only use m/z = 106 as a biomarker to distinguish
+between DM and TB-DM. This is the current research challenge and
+limitation. Receiver operating characteristic curve analysis achieved
+a sensitivity of 93%, a specificity of 100%, and an AUC of 99.7%
+based on VOC m106. In the blinded test set, the data also show that
+the content of VOC m106 indeed significantly decreases in the DM-
+TB group and achieved well-distinguished efficacy. VOC m106 was
+a potential biomarker for detecting DM-TB.
+However, there are still some limitations to this study. HPPI-
+TOF-MS primarily quantitatively analyzes VOCs, with m/z and peak
+intensity serving as surrogate indicators of concentration. Chemical
+Frontiers in Molecular Biosciences 06 frontiersin.org
+
+===== PAGE 7 =====
+Xu et al. 10.3389/fmolb.2024.1436135
+composition analysis is still required for confirmation. Further
+studies are needed to confirm specific breath biomarkers for DM-TB
+and clarify their metabolic pathways.
+Data availability statement
+The raw data supporting the conclusion of this article will be
+made available by the authors, without undue reservation.
+Ethics statement
+The studies involving humans were approved by the Ethics
+Committee of the Third People’ s Hospital of Shenzhen. The studies
+were conducted in accordance with the local legislation and
+institutional requirements. The participants provided their written
+informed consent to participate in this study.
+Author contributions
+RX: writing–review and editing. YZ: writing–review and editing
+and resources. ZL: writing–review and editing and software. MH:
+writing–review and editing and methodology. HL: writing–review
+and editing and data curation. GL: writing–review and editing
+and resources. MY: resources, writing–review and editing, and
+formal analysis. LF: resources and writing–review and editing. XC:
+writing–review and editing and funding acquisition. GD: project
+administration, supervision, and writing–review and editing. WW:
+writing–review and editing, supervision, and writing–original draft.
+Funding
+The author(s) declare that financial support was received for the
+research, authorship, and/or publication of this article. This work
+was supported by the Shenzhen Third People’ s Hospital Research
+Foundation under Grant Nos G202205, G2022003, G2022155, and
+24250G1025 and Ganzhou Science and T echnology Project under
+Grant (No 2023LNS37008. The funders played no role in the study
+design, data collection, analysis, decision to publish, or preparation
+of the manuscript.
+Acknowledgments
+The authors thank all the physicians and assistants who
+participated in this study and enrolled patients.
+Conflict of interest
+The authors declare that the research was conducted in the
+absence of any commercial or financial relationships that could be
+construed as a potential conflict of interest.
+Publisher’s note
+All claims expressed in this article are solely those of the
+authors and do not necessarily represent those of their affiliated
+organizations, or those of the publisher, the editors, and the
+reviewers. Any product that may be evaluated in this article, or claim
+that may be made by its manufacturer, is not guaranteed or endorsed
+by the publisher.
+References
+Al-Rifai, R. H., Pearson, F ., Critchley, J. A., and Abu-Raddad, L. J. (2017). Association
+between diabetes mellitus and active tuberculosis: a systematic review and meta-
+analysis. PLoS One 12 (11), e0187967. doi:10.1371/journal.pone.0187967
+Badola, M., Agrawal, A., Roy, D., Sinha, R., Goyal, A., and Jeet, N. (2023). V olatile
+organic compound identification-based tuberculosis screening among TB suspects: a
+diagnostic accuracy study.Adv. Respir. Med.91 (4), 301–309. doi:10.3390/arm91040024
+Broger, T ., Koeppel, L., Huerga, H., Miller, P ., Gupta-Wright, A., Blanc, F . X., et al.
+(2023). Diagnostic yield of urine lipoarabinomannan and sputum tuberculosis tests in
+people living with HIV: a systematic review and meta-analysis of individual participant
+data. Lancet Glob. Health 11 (6), e903–e916. doi:10.1016/s2214-109x(23)00135-3
+Cáceres, G., Calderon, R., and Ugarte-Gil, C. (2022). T uberculosis and comorbidities:
+treatment challenges in patients with comorbid diabetes mellitus and depression. Ther.
+Adv. Infect. Dis. 9, 20499361221095831. doi:10.1177/20499361221095831
+Chen, X., Li, R., Ge, S., Li, Y ., Cai, C., W eng, T ., et al. (2023). Rapid detection
+of extensive drug resistance by xpert MTB/XDR optimizes therapeutic decision-
+making in rifampin-resistant tuberculosis patients. J. Clin. Microbiol. 61 (6), e0183222.
+doi:10.1128/jcm.01832-22
+Cole, J. B., and Florez, J. C. (2020). Genetics of diabetes mellitus and diabetes
+complications. Nat. Rev. Nephrol.16 (7), 377–390. doi:10.1038/s41581-020-0278-5
+Freddi, S., and Sangaletti, L. (2022). Trends in the development of electronic noses
+based on carbon nanotubes chemiresistors for breathomics. Nanomaterials (Basel). 12
+(17), 2992. doi:10.3390/nano12172992
+Fu, L., W ang, L., W ang, H., Y ang, M., Y ang, Q., Lin, Y ., et al. (2023). A cross-sectional
+study: a breathomics based pulmonary tuberculosis detection method.BMC Infect. Dis.
+23 (1), 148. doi:10.1186/s12879-023-08112-3
+Hussain, M. S., Gupta, G., Mishra, R., Patel, N., Gupta, S., Alzarea, S. I., et al. (2024).
+Unlocking the secrets: volatile Organic Compounds (VOCs) and their devastating
+effects on lung cancer. Pathol. Res. Pract. 255, 155157. doi:10.1016/j.prp.2024.155157
+Ibrahim, W ., Carr, L., Cordell, R., Wilde, M. J., Salman, D., Monks, P . S., et al. (2021).
+Breathomics for the clinician: the use of volatile organic compounds in respiratory
+diseases. Thorax 76 (5), 514–521. doi:10.1136/thoraxjnl-2020-215667
+Khoubnasabjafari, M., Mogaddam, M. R. A., Rahimpour, E., Soleymani, J., Saei, A.
+A., and Jouyban, A. (2022). Breathomics: review of sample collection and analysis,
+data modeling and clinical applications. Crit. Rev. Anal. Chem. 52 (7), 1461–1487.
+doi:10.1080/10408347.2021.1889961
+Kontsevaya, I., Cabibbe, A. M., Cirillo, D. M., DiNardo, A. R., Frahm, N., Gillespie,
+S. H., et al. (2023). Update on the diagnosis of tuberculosis. Clin. Microbiol. Infect .
+doi:10.1016/j.cmi.2023.07.014
+Luo, W ., He, Y ., Xu, J., Zhang, S., Li, C., Lv, J., et al. (2023). Comparison of
+third-generation sequencing technology and traditional microbiological detection in
+pathogen diagnosis of lower respiratory tract infection.Discov. Med.35 (176), 332–342.
+doi:10.24976/Discov.Med.202335176.34
+Meng, S., Li, Q., Zhou, Z., Li, H., Liu, X., Pan, S., et al. (2021). Assessment
+of an exhaled breath test using high-pressure photon ionization time-of-flight
+mass spectrometry to detect lung cancer. JAMA Netw. Open 4 (3), e213486.
+doi:10.1001/jamanetworkopen.2021.3486
+Moura, P . C., Raposo, M., and V assilenko, V . (2023). Breath volatile
+organic compounds (VOCs) as biomarkers for the diagnosis of
+pathological conditions: a review. Biomed. J. 46 (4), 100623. doi: 10.1016/
+j.bj.2023.100623
+Frontiers in Molecular Biosciences 07 frontiersin.org
+
+===== PAGE 8 =====
+Xu et al. 10.3389/fmolb.2024.1436135
+Paez, R., Kammer, M. N., Tanner, N. T ., Shojaee, S., Heideman, B. E., Peikert, T .,
+et al. (2023). Upd/ate on biomarkers for the stratification of indeterminate pulmonary
+nodules. Chest 164 (4), 1028–1041. doi:10.1016/j.chest.2023.05.025
+Rehman, A. U., Khattak, M., Mushtaq, U., Latif, M., Ahmad, I., Rasool,
+M. F ., et al. (2023). The impact of diabetes mellitus on the emergence of
+multi-drug resistant tuberculosis and treatment failure in TB-diabetes comorbid
+patients: a systematic review and meta-analysis. Front. Public Health 11, 1244450.
+doi:10.3389/fpubh.2023.1244450
+Savito, L., Scarlata, S., Bikov, A., Carratù, P ., Carpagnano, G. E., and Dragonieri, S.
+(2023). Exhaled volatile organic compounds for diagnosis and monitoring of asthma.
+World J. Clin. Cases 11 (21), 4996–5013. doi:10.12998/wjcc.v11.i21.4996
+Sodsri, T ., Baughman, R. P ., and Sriprasart, T . (2023). Diagnosis of pulmonary
+sarcoidosis in tuberculosis endemic area-a narrative review. J. Thorac. Dis. 15 (10),
+5760–5772. doi:10.21037/jtd-23-192
+Sun, N., Krishnan, P ., Rees, C. A., Zhang, M., Stevenson, K., and Hill, J.
+E. (2023). Profiling volatile organic compounds from human plasma using
+GC × GC-T oFMS. J. Breath. Res. 17 (3), 037104. doi: 10.1088/1752-7163/
+acd806
+V aishya, R., Misra, A., V aish, A., and Singh, S. K. (2024). Diabetes and tuberculosis
+syndemic in India: a narrative review of facts, gaps in care and challenges.J. Diabetes 16
+(5), e13427. doi:10.1111/1753-0407.13427
+WHO (2022). Global tuberculosis report. Geneva: W orld Heatlh Organization.
+Xiao, W ., Huang, D., Li, S., Zhou, S., W ei, X., Chen, B., et al. (2021). Delayed diagnosis
+of tuberculosis in patients with diabetes mellitus co-morbidity and its associated factors
+in Zhejiang Province, China. BMC Infect. Dis. 21 (1), 272. doi: 10.1186/s12879-021-
+05929-8
+Xu, G., Hu, X., Lian, Y ., and Li, X. (2023). Diabetes mellitus affects the treatment
+outcomes of drug-resistant tuberculosis: a systematic review and meta-analysis. BMC
+Infect. Dis. 23 (1), 813. doi:10.1186/s12879-023-08765-0
+Zhao, L., Fan, K., Sun, X., Li, W ., Qin, F ., Shi, L., et al. (2023). Host-directed therapy
+against mycobacterium tuberculosis infections with diabetes mellitus. Front. Immunol.
+14, 1305325. doi:10.3389/fimmu.2023.1305325
+Zhou, G., Guo, X., Cai, S., Zhang, Y ., Zhou, Y ., Long, R., et al. (2023). Diabetes mellitus
+and latent tuberculosis infection: an updated meta-analysis and systematic review.BMC
+Infect. Dis. 23 (1), 770. doi:10.1186/s12879-023-08775-y
+Frontiers in Molecular Biosciences 08 frontiersin.org

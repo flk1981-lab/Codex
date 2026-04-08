@@ -1,0 +1,10 @@
+﻿Tables: 9
+Table 1: 18x10
+Table 2: 2x1
+Table 3: 1x1
+Table 4: 1x1
+Table 5: 1x1
+Table 6: 3x1
+Table 7: 1x1
+Table 8: 11x4
+Table 9: 17x4

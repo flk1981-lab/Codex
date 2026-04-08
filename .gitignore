@@ -34,6 +34,9 @@ reports/**/*.pptx
 *.tmp
 *.bak
 
+# Large local installers are not suitable for GitHub sync
+archive/_installers/
+
 # Nested project repositories are managed separately
 workspaces/*
 !workspaces/README.md

@@ -1,0 +1,3 @@
+﻿subject_id_std,row_number_original,研究组/方案（Arm）,治疗开始日期,治疗结束日期,停药后1年，是否不良结局（Unfavorable）,停药后1年，不良结局构成,available_12m_outcome,followup_12m_mature,completeness_score,备注.1,kept_row_number,kept_this_row
+陈桂梓,107,BDLM,2025-06-28,,,,False,False,4,未停药,109,False
+陈桂梓,109,BDLM,2025-07-03,2025-12-30,,,False,False,6,刚停药,109,True

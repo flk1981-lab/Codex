@@ -1,0 +1,339 @@
+===== PAGE 1 =====
+Innovations in Cost-Disruptive Tools for
+Diagnosis and Screening
+Before applying, applicants should familiarize themselves with the supporting documents for this Grand Challenge,
+including the terms and conditions of the Gates Foundation, the Rules and Guidelines, Application Instructions, and
+Frequently Asked Questions.
+If you are planning to apply to this RFP, we will be hosting a dedicated webinar on March 30, from 8:30-9:30 AM
+Paciﬁc Time. This session will provide a comprehensive overview of the RFP details and an opportunity to have your
+questions answered. To participate in the webinar, please register and submit your questions in advance. If you
+cannot attend live, the webinar will be recorded and available on this challenge page after the session.
+Background
+Diagnostic Access and Aﬀordability
+Limited access to aﬀordable diagnosis is a signiﬁcant barrier to disease control and equitable healthcare in low-
+and middle-income countries (LMICs). Nearly half of the global population lacks essential diagnostic tests, and
+access is almost nonexistent for up to 81% of people in the poorest settings, driving delayed or missed disease
+detection at scale.
+Diagnostics and screening underpin clinical care, surveillance, and disease control, yet many tools remain too
+costly, infrastructure-dependent, or operationally complex for use. The World Health Organization’s (WHO)
+ASSURED principles, as well as the experience with malaria rapid diagnostic tests (RDTs) and community
+antigen testing during COVID-19, demonstrate how decentralization, low complexity, and aﬀordability can
+expand reach and strengthen surveillance. -  Where mature, widely deployed diagnostic classes already meet
+[1]
+[2] [3]
+
+===== PAGE 2 =====
+programmatic needs, pathway-changing innovation is more likely to yield impact than incremental
+improvements to established formats.
+Beyond lowering consumable costs, the economic model must support high-volume screening through very
+low per-test costs and rapid throughput. Durable device- or platform-based solutions that use minimal or no
+consumables and amortize capital costs across large volumes, enabling near-zero incremental cost per test,
+can be transformational. Such approaches may draw on cross-sector technologies including imaging, acoustics,
+breath or environmental analyzers, contactless physiological monitors, or modular hardware with
+interchangeable sensing or analyte capabilities and minimal consumable inputs. In some contexts, appropriate
+use of artiﬁcial intelligence (AI) may enhance performance, enable task-shifting, automate quality control, and
+reduce operator variability, supporting high‑throughput deployment in real‑world LMIC workﬂows.
+The Challenge
+This Grand Challenge seeks cost-disruptive tools for diagnosis and screening, deﬁned as devices that
+amortize capital to near-zero incremental cost and consumable $1-class tests that materially reset the cost
+curve in LMICs while meeting real-world deployment constraints (see Table 1). For screening applications, cost
+targets should be interpreted per person screened; for diagnostic or monitoring applications, per test
+performed. Accordingly, this initiative aims to translate these cost-disruptive concepts into scalable solutions
+across high-priority disease areas.
+We are particularly interested in transformative, high-risk, high-reward innovations that fundamentally rethink
+how diagnosis or screening is performed, including novel sensing modalities, software-deﬁned diagnostics, and
+AI-enabled or software-only approaches that materially change performance, cost structure, or deployment
+models.
+Table 2 outlines topic areas and use cases that are in scope for this RFP. However, applicants are not required
+to demonstrate existing disease-speciﬁc validation data for these use cases. Cross-sector or cross-disease
+innovations are explicitly encouraged. For example, platforms or technologies initially developed for non‑health,
+non‑diagnostic, or diﬀerent disease applications are eligible, provided the proposal includes a clear, technically
+credible, milestone-based plan to adapt the technology to at least one relevant use case in Table 2.
+The Challenge aims to:
+Source cost-disruptive devices and $1-class diagnostics for the priority conditions listed in Table 2,
+including cost-enabling manufacturing innovations.
+Advance cross-sector, platform, and multimodal solutions to enable scalable screening, same-visit
+decision-making, or reconﬁgurable use cases.
+Build a staged portfolio spanning high-risk early concepts to later-stage adaptation and scale, using
+milestone-based awards aligned to clear technology readiness level (TRL) criteria.
+We are looking for proposals that:
+Clearly articulate the relevant LMIC disease focus area and intended use case from Table 2, especially
+transformative approaches with a technically credible adaptation pathway where disease-speciﬁc
+validation does not yet exist.
+Describe operational feasibility for LMIC settings (see Table 1), including explicit attention to high-
+throughput screening workﬂows, where applicable.
+
+===== PAGE 3 =====
+Include a feasible workplan and milestones appropriate to the maturity of the technology.
+Provide clear evidence to justify the requested funding level.
+Present a credible pathway to population-scale economics (approximately US$1 or near-zero incremental
+cost), including key assumptions. For platform-based solutions, describe how multiple use cases can
+improve economics and sustainability.
+Commit to independent evaluation participation and appropriate ethical, regulatory, and Foundation
+open access policy.
+Table 1: Cross-Cutting Design Criteria
+Criterion Expectation
+Rapid results Provides actionable results during a single patient encounter.
+Ease of use Operable by minimally trained users in decentralized settings.
+LMIC robustness Functions reliably in low-resource environments (heat, dust, intermittent power,
+limited infrastructure).
+Cold-chain
+independence
+Minimizes or eliminates cold-chain requirements through thermostable reagents
+and temperature-stable device design.
+Consumables
+minimization
+Reduces reliance on disposable consumables and favors durable, reusable
+hardware architectures with negligible incremental cost per screening.
+Cost Demonstrates a credible pathway to approximately US$1 per test or near-zero
+incremental cost per person screened for devices.
+Transformative
+innovation
+Incorporates novel architectures such as multimodal sensing, high-order
+multiplexing, software-deﬁned diagnostics, AI-enabled interpretation, or software-
+only approaches.
+Additional Desirable Attributes:
+Attribute Expectation
+Multi-disease capability Enables testing for multiple diseases from a single platform or workﬂow.
+Data traceability and
+surveillance integration
+Ensures diagnostic results generated at the point of care are digitally structured,
+traceable, and interoperable with national and global surveillance systems,
+enabling secure transmission from test execution through aggregation and
+public‑health use.
+Modularity Supports expansion to additional analytes or conditions without major redesign.
+Environmental
+sustainability
+Minimizes environmental impact through biodegradable or recyclable
+consumables and responsible end-of-life disposal strategies
+For this challenge, we are not seeking proposals that:
+Are implementation, procurement, delivery, or roll-out projects without substantive R&D or primarily
+consisting of large clinical trials or deﬁnitive ﬁeld studies (limited, development-oriented evaluation may
+be appropriate).
+
+===== PAGE 4 =====
+Are discovery-only biomarker projects without a clear pathway to a deployable prototype within three to
+ﬁve years, or that propose only incremental modiﬁcations of well-established approaches without a
+plausible step-change in cost, scalability, or screening value.
+Request funding levels that are not supported by commensurate technical readiness, feasibility evidence,
+and a credible pathway to validation.
+Lack a plausible pathway to meet cost and operational constraints, including reliance on expensive
+consumables or complex infrastructure without a credible mitigation plan.
+Are unwilling to share prototypes, reagents, and/or data as needed for third-party assessment under
+appropriate governance arrangements.
+Award Structure
+To accommodate diﬀerent stages of innovation, this Challenge has multiple award sizes commensurate with
+technology maturity. For example:
+Option A: Smaller proof-of-concept awards (up to ﬁve awards of approximately US$300,000, for each
+selected project, with a grant term of up to 24 months) to support early feasibility and prototyping,
+inclusive of technically risky, out-of-the-box concepts.
+ 
+Option B: Mid-level awards (up to three awards of approximately US$500,000, for each selected project,
+with a grant term of up to 24 months) to support product reﬁnement and early validation.
+ 
+Option C: Larger awards (up to two awards of approximately US$1,000,000, for each selected project,
+with a grant term of up to 36 months) to support mature platforms or advanced adaptation toward
+veriﬁcation and ﬁeld readiness, with commensurate evidence of technical readiness, feasibility, and a
+clear pathway to validation.
+Final award amounts, number of awards at each level, and duration will depend on proposal quality and
+strategic ﬁt. Applicants should request funding aligned with the scope and maturity of their proposed work and
+include a clear milestone plan proportionate to the support requested. Indirect costs will be considered and
+should be included in the budget for up to the grant amount awarded (subject to the Gates Foundation's
+indirect cost policy).
+Eligibility
+This initiative is open to research institutes, nonproﬁt organizations, for-proﬁt companies, international
+organizations, government agencies, and academic institutions. Please note that all applicants will be expected
+to comply with the Gates Foundation's global access requirements. We encourage applications from projects
+led by or collaborating with women and/or researchers at institutions based in LMICs. Individuals and
+organizations classiﬁed as individuals for U.S. tax purposes are not eligible to receive an award from the
+foundation as part of this initiative.
+Table 2:   In-Scope Topic Areas, and Opportunities
+Topic area Tuberculosis (TB)
+Background Tuberculosis requires highly scalable and extremely low-cost tools (including assays and
+durable device-based technologies) for both community-level, symptom-agnostic screening
+and accessible near-patient diagnosis.
+
+===== PAGE 5 =====
+Opportunity A. Community and primary-care symptom-agnostic screening tools (non-sputum
+approaches prioritized).
+  B. Diagnostic tools or devices aligned with WHO TB diagnostic TPPs, including true point-
+of-care tests that enable rapid conﬁrmation outside centralized laboratories.
+  Additional information: TB
+Topic area Human Immunodeﬁciency Virus (HIV)
+Background Sustained epidemic control hinges on decentralized viral-load (VL) monitoring, timely early
+infant diagnosis (EID), and reliable identiﬁcation of advanced HIV disease (AHD).
+Opportunity A. Near-Point-of-care or decentralized quantitative HIV viral-load testing.
+  B. Point-of-care tool for EID for infants <18 months to enable same-visit diagnosis and
+treatment initiation.
+  C. Near-Point-of-care CD4 or AHD triage tests to identify people needing the AHD
+package of care.
+  Additional information: HIV
+Topic area Malaria
+Background Malaria case management and elimination strategies depend on ultra-low-cost rapid
+diagnostic tests (RDTs), with current procurement prices well below US$1 per test. Key
+challenges include compromised sensitivity due to HRP2/3 deletions, limited species
+diﬀerentiation at low parasite densities, market fragmentation aﬀecting manufacturing
+reliability, and insuﬃcient tools for mass screen-and-treat (MSAT) and elimination settings.
+Opportunity A. High-throughput screening tools for asymptomatic populations, including novel
+device-based or noninvasive sensing approaches, with <1 minute time-to-result and
+sensitivity to detect low-density infections.
+  B. Ultra-low-cost non-HRP2 pan-Plasmodium RDTs (LDH or equivalent) with high
+sensitivity/speciﬁcity and sustainable sub-$1 manufacturing pathways. RDTs based
+solely upon HRP-2/3 as a biomarker are out of scope.
+  C. AI-enabled or digitally augmented RDT platforms to improve read accuracy,
+performance, oﬀer semi-quantitative interpretation, or increase workﬂow eﬃciency
+without increasing cost.
+  Additional information: Malaria
+
+===== PAGE 6 =====
+Topic area Sexually Transmitted Infections (STI)
+Background Syndromic management leaves many STIs undetected and drives overtreatment. HPV
+screening and triage that enable same-visit screen-and-treat pathways are additional high-
+impact prevention priorities.
+Opportunity A. Point-of-care diagnostics for gonorrhea (NG), chlamydia (CT), and trichomonas (TV) in
+symptomatic adults.
+  B. Point-of-care diagnostics for active adult and congenital syphilis with ≥ 90% sensitivity
+≥ 95% speciﬁcity in populations, including neonates to inform treatment.
+  C. Point-of-care tools for high-risk HPV primary screening, with ≥ 95% sensitivity for CIN2+
+and ≥ 99% speciﬁcity for ≤ CIN 1, enabling same-visit screen-and-treat for cervical
+precancer.
+  D. Platforms supporting modular expansion to additional STI analytes (e.g., BV) and
+programmatic throughput.
+  Additional information: STI
+Topic area Maternal and Newborn Health
+Background Timely detection of pregnancy complications, (e.g., fetal growth restriction, preeclampsia,
+gestational hyperglycemia, and anemia) and neonatal infections are essential to prevent
+avoidable maternal and neonatal morbidity and mortality.
+Opportunity A. Preeclampsia screening and diagnostics: biomarker-based approaches such as
+quantitative PlGF/sFlt-1 ratios or retinal biomarkers measured with tools such as
+fundoscopy.
+  B. Simpliﬁed, non-fasting or minimally invasive new biomarker-based approaches for
+gestational hyperglycemia detection/monitoring.
+  C. Rapid Point-of-care tools for neonatal sepsis triage to guide treatment escalation
+decisions and/or identify neonates who can safely avoid or step down from intensive
+care.
+  D. Tools for earlier identiﬁcation of infectious disease outbreak clusters in neonatal
+intensive care units (NICU).
+  E. Triage tool for heavy menstrual bleeding (HMB) to rule out structural etiologies and
+identify ovarian abnormalities (e.g. biomarker panel or AI-enabled tool).
+
+===== PAGE 7 =====
+  Additional information: Maternal and Newborn Health
+Topic area Anemia and Women's Health
+Background Anemia remains highly prevalent in key risk groups (children, adolescents, women of
+reproductive age, pregnant women, and lactating mothers), and routine hemoglobin testing
+is often limited by invasive sampling and infrastructure constraints, leading to missed or
+delayed identiﬁcation and treatment.
+Opportunity A. Non-invasive anemia screening tool for community-level mass screening or primary-
+care-level triage.
+  B. Point-of-care, minimally invasive diagnostic to distinguish iron deﬁciency anemia from
+other causes, including for severity testing, repeat testing in ANC and postpartum, for
+evaluation of heavy menstrual bleeding, and for micronutrient assessment.
+  Additional information: Anemia and Women's Health
+Topic area Nutrition Surveillance and Fortiﬁed-Food Monitoring
+Background Nutrition programs require timely, subnational micronutrient data and practical on-site
+fortiﬁed-food testing to guide targeting, monitor compliance, and inform vaccine and
+infectious-disease policy decisions.
+Opportunity A. Micronutrient Biomarker (MNBi): Technologies, including novel device-based or
+multimodal sensing approaches, that are compatible with minimally invasive or
+remnant-specimens and capable of detecting low-concentration micronutrients (e.g.,
+B12, folate), including in the presence of inﬂammation, suitable for routine, high-
+throughput subnational surveillance.
+  B. High-throughput laboratory or multiplex workﬂows that support repeated biomarker
+measurement through integration with existing infectious disease surveillance
+systems.
+  C. Rapid tests that give quantitative or semi-quantitative on-site readouts of
+micronutrient content (particularly zinc or folic acid) in fortiﬁed food matrices to inform
+quality assurance.
+  Additional information: Nutrition Surveillance and Fortiﬁed-Food Monitoring
+Topic area Enteric Diseases
+Background Enteric infections (including typhoid, cholera, and pediatric diarrhea pathogens) remain a
+major driver of morbidity and mortality in LMICs and can trigger outbreaks requiring rapid
+public-health action. Accurate, near-patient diagnostics are essential not only for clinical
+management and antimicrobial stewardship, but also for surveillance and vaccine policy
+decisions, as vaccines are available or in development for several high-burden enteric
+pathogens.
+
+===== PAGE 8 =====
+Opportunity A. Point-of-care test to detect acute Salmonella enterica serovar Typhi infection with ≥ 90%
+sensitivity and ≥ 90% speciﬁcity.
+  B. Acute Shigella diagnostic that detects Shigella spp. with high accuracy in the same
+patient encounter.
+  C. Acute bacterial diarrhea diagnostic with high accuracy to distinguish bacterial from
+non-bacterial diarrhea in the same patient encounter.
+  D. Near-patient cholera conﬁrmatory test to detect toxigenic Vibrio cholerae (O1/O139
+and/or cholera-toxin markers) with ≥ 95% sensitivity and ≥ 97% speciﬁcity, enabling
+faster conﬁrmation than centralized workﬂows.
+  E. Quantitative, ﬂexible, multi-target pediatric diarrhea panel that includes at minimum
+rotavirus and Shigella, with additional high-burden viral or bacterial pathogens
+conﬁgurable to support evolving surveillance and vaccine priorities.
+  Additional information: Enteric Diseases
+Topic area Neglected Tropical Diseases (NTDs)
+Background NTDs control and elimination require sensitive, speciﬁc, and aﬀordable surveillance tools for
+community case-ﬁnding, targeted mass drug administration (MDA), mapping, and post-MDA
+surveillance, especially tools that retain performance at low prevalence.
+Opportunity A. Diagnostics that detect active infection vs. prior exposure to support stopping MDA
+and post-validation surveillance decisions.
+  B. Point-of-care tests detecting circulating parasite antigens or other biomarkers of
+ongoing infection (e.g., in lymphatic ﬁlariasis or onchocerciasis) to improve speciﬁcity
+for transmission.
+  C. Non-blood-based diagnostics that reduce operational barriers such as night blood
+collection in lymphatic ﬁlariasis and improve feasibility in elimination settings.
+  D. Diagnostic tool for identifying prepatent or early patent Guinea worm infection in dogs
+to facilitate surveillance and targeted containment.
+  E. High-throughput, integrated serology tests for mapping post-MDA surveillance across
+multiple NTDs (e.g., onchocerciasis, lymphatic ﬁlariasis, schistosomiasis, soil-
+transmitted helminths), with high sensitivity and speciﬁcity at low prevalence.
+  Additional information: NTD
+
+===== PAGE 9 =====
+Initiative: Grand Challenges
+Topic area Emerging Pathogens and Syndromic Testing
+Background Rapid detection, scalable surveillance, and surge-ready manufacturing are critical to
+shortening the time from pathogen emergence to population-level response. Diagnostics
+must be rapidly adaptable to new analytes, support decentralized triage and screening, and
+integrate with surveillance and early-warning systems in low-resource settings.
+Opportunity A. Rapidly reconﬁgurable, modular, open-architecture platforms capable of quick
+adaptation for new or emerging pathogens and capable of automated reporting to
+public health surveillance systems, supporting true Point-of-care triage and screening.
+  B. High-order multiplex serological platforms suitable for nationally representative,
+population-level surveillance across endemic and epidemic pathogens.
+  C. Point-of-care stool-based or non-stool diagnostic for live poliovirus to reduce outbreak
+conﬁrmation time.
+  D. Low-cost multiplex platforms capable of detecting priority pathogens in wastewater or
+environmental samples for outbreak detection and early warning.
+  Additional information: Emerging Pathogens and Syndromic Testing
+Topic area Manufacturing Innovations
+Background Novel manufacturing techniques that increase scale, automate processes, and/or improve
+usable product yield can be critical in driving down the cost of diagnostic consumables
+enabling existing technologies to meet the $1-class diagnostic target.
+Opportunity A. Manufacturing innovations that reduce the cost of diagnostic consumables (e.g.
+reagents, lateral ﬂow assays, microﬂuidic cartridges).
+  B. Novel approaches to reduce device component costs by leveraging the latest advances
+in sensors and chip technologies - enabling higher integration and functionality with
+fewer components and simpler system architectures.
+ Fleming KA et al. The Lancet Commission on diagnostics: transforming access to diagnostics. The Lancet,
+Volume 398, Issue 10315. 2021.
+Land KJ, et al. REASSURED diagnostics to inform disease control strategies, strengthen health systems and
+improve patient outcomes. Nat Microbiol. 2019; 4(1):46-54.
+Kerr G, et al. Lessons for improved COVID-19 surveillance from the scale-up of malaria testing strategies.
+Malar J. 2022; 21:223.
+[1]
+[2]
+[3]
+
+===== PAGE 10 =====
+Challenge Topic: Diagnosis and Screening
+Date Open: Mar 17, 2026, 9:00 am PDT
+Deadline: Apr 28, 2026, 11:30 am PDT
+Supporting Materials:
+Diagnostics and Screening Tools - RFP
+Diagnostics and Screening Tools RFP - Chinese
+Diagnostics and Screening Tools RFP - French
+Diagnostics and Screening Tools RFP - Korean
+Diagnostics and Screening Tools RFP - Portuguese
+Diagnostics and Screening Tools RFP - Spanish
+Diagnostics and Screening Tools - Rules and Guidelines
+Diagnostics and Screening Tools - Application Instructions
+Diagnostics and Screening Tools - Budget Template
+Diagnostics and Screening Tools - Frequently Asked Questions (FAQs)
