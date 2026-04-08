@@ -1,9 +1,11 @@
+input/backup/*
 input/original/*
 input/working/*
 output/backups/*
 output/chapters/*
 output/outline/*
 output/reports/*
+tools/__pycache__/*
 !input/original/.gitkeep
 !input/working/.gitkeep
 !output/backups/.gitkeep

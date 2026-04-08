@@ -33,6 +33,8 @@ reports/**/*.pptx
 # Backups and temporary files
 *.tmp
 *.bak
+archive/_docx_edit_tmp/
+archive/bdlm_temp/
 
 # Large local installers are not suitable for GitHub sync
 archive/_installers/
